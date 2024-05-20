@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Quick tip</title>
 </head>
  <body>
@@ -10,15 +11,51 @@
         <h1> quick tip </h1>
     
         <section>
-            <div>
-                <label for="">bill</label>
+            <div class="bill">
+                <label for="yourBill">bill</label>
                 <input type="number" placeholder="Your bill" id="yourBill" />
             </div>
-                 <div>
-                    <label for="">Select tip</label>
+                 <div class="space-between">
+                    <label for="tipInput">Select tip</label>
                     <span id="tipPrecent">0%</span>
                  </div>
+                 <div>
+                 <input type="range" value="0" id="tipInput" />
+                </div>
+                <div class="space-between">
+                    <span>Tip</span>
+                    <span id="tipvalue"></span>
+                </div>
 
+                <hr />
+
+                <div class="space-between Total">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+                
+                </div>
+                
+                
+
+                 </div>
+                 
+        </section>
+        <section>
+            <div>
+                <div class="space-between">
+                    <label for="splitinput"></label>
+                    <span id="splitValue"></span>
+                </div>
+                <input type="range" min="1" max="10" value="1" id="splitinput"/>
+            </div>
+            <div class="space-between">
+                <span>Bill each</span>
+                <span id="Billeach"></span>
+            </div>
+            <div>
+                <span>Tip each</span>
+                <span id="Tipeach"></span>
+            </div>
         </section>
     </main>
  </body>
